@@ -10,10 +10,16 @@
 
 #content
 {
-    float: center;
+    float: right;
 	height: 300px;
 	width: 100px;
 	padding: 15px;
 	border: 30px dotted yellow;
 	margin: 15px;
+}
+
+
+#center
+{
+	float: center;
 }
