@@ -1,9 +1,19 @@
 #sidebar
 {
     float: left;
+	height: 300px;
+	width: 100px;
+	border: 2px solid black;
+	border-radius: 5px;
+	background-color: red;
 }
 
 #content
 {
-    float: center;
+    float: right;
+	height: 300px;
+	width: 100px;
+	border: 2px solid black;
+	border-radius: 5px;
+	background-color: green;
 }
