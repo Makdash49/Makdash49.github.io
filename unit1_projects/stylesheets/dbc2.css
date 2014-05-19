@@ -5,6 +5,7 @@
 	width: 100px;
 	padding: 15px;
 	border: 2px solid orange;
+	margin: 15px;
 }
 
 #content
@@ -13,5 +14,6 @@
 	height: 300px;
 	width: 100px;
 	padding: 15px;
-	border: 15px dotted yellow;
+	border: 30px dotted yellow;
+	margin: 15px;
 }
