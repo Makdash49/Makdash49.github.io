@@ -1,0 +1,109 @@
+
+
+body {
+	font-family: Arial;
+	color: black;
+	margin-top: 80px;
+	margin-bottom: 100px;
+}
+
+.wrapper {
+	max-width: 900px;
+	margin: auto;
+}
+
+p {
+	line-height: 1.5em;
+	font-size: 1em;
+}
+
+
+.bold {
+	font-weight: bold;
+}
+
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: green;
+}
+
+
+nav > ul {
+	float: right;
+	margin: 0.5em 0;
+}
+
+nav > ul > li {
+	display: inline-block;
+	margin-left: 1em;
+	color: white;
+}
+
+nav li a {
+	color: white;
+	text-decoration: none;
+	font-weight: lighter;
+	font-size: 2em;
+}
+
+
+aside {
+	float: left;
+	margin-top: 20px;
+	width: 200px;
+	height: 400px;
+}
+
+aside .myname {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #444;
+}
+
+aside > p {
+	font-size: 0.9em;
+	color: #777;
+}
+
+aside a:link , aside a:visited {
+	font-size: 0.9em;
+	color: #777;
+}
+
+#profile-image {
+	width: 200px;
+	border-radius: 75px;
+}
+
+
+
+#index-container ul li {
+	margin-top: 1em;
+}
+
+#index-container ul {
+	margin-bottom: 2em;
+	list-style-type: none;
+}
+
+
+
+.posts-container {
+	float: right;
+	max-width: 650px;
+	width: 100%;
+	margin-bottom: 100px;
+}
+
+.posts-container a:link, .posts-container a:visited {
+	font-weight: bold;
+	color: #444;
+}
+
+/*--- The code of Igor Gaelzer was used as a reference for syntax ---*/
+
+
