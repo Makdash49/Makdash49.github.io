@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mark McQuillen Cultural Blog Week 5</title>
+    <title>Mark McQuillen Te Blog Week 5</title>
     <link type="text/css" rel="stylesheet" href="/Users/(MAC username)/Desktop/(username).github.io/unit1_projects/stylesheets/untitled.css">
     <style type="text/css">
       #wrapper {
@@ -30,68 +30,79 @@
   <body>
     <div id="wrapper">
         <div id="sidebar">
-          <p>I'm thinking, "Pairing is so cool!"</p>
+          <p>DBC will make me a Classy Guy!</p>
           <img src="https://yt3.ggpht.com/-VetlqduKX5k/AAAAAAAAAAI/AAAAAAAAAAA/EjQSfkQVDtg/s100-c-k-no/photo.jpg">
         </div>
         
         <div id="centerbar">
             <div id="container">
-                <h1>The Sweet Fruitfulness of Pairing</h1>
+                <h1>A Thing or Two About Classes</h1>
                 <h3>by Mark McQuillen</h3>
             </div>
             
             <div id="paragraph_title">
                 <h6>June 15, 2014</h6>
-                <h4>What was it like to pair with others to solve challenges?</h4>
+                <h4>Classes of Spaceships</h4>
             </div>
             
             <div id="paragraph_content">
-                <p>Pairing is incredibly valuable.  I had wondered how DBC was able to teach as much as they do in such a short time.  After pairing a few times, I think I have my answer.  When I pair, the social aspect of the interaction helps me stay extremely focused and engaged.  On many occassions I have not known an answer but my pair did, and then just a few minutes later, I knew an answer when my pair didn't.  Together we were able to figure things out much more quickly and easier than when working by ourselves.  It was also more fun.  I believe I have made some genuine friends through pairing and it will almost feel like a reunion when I meet up with people in person at DBC.</p>
-            </div>
-            <div id="paragraph_title">
-                <h4>Was something particularly fun or rewarding?</h4>
-            </div>
-            
-            <div id="paragraph_content">
-                <p>I found it particularly rewarding to check in with people and get to know them and where they are at in their coding careers.  I got a sense of the person on the whole and it was also great to emphasize with their experience of DBC.  I ended up feeling less alone in my concerns.</p>
+                <p>Classes are a way of defining objects so that you can create instances of a class and then call those instances with methods defined as part of the class.</p>
             </div>
 
-            <div id="paragraph_title">
-                <h4>Was something frustrating and difficult for you?</h4>
-            </div>
-            
             <div id="paragraph_content">
-                <p>Thinking of constructive criticism when I really didn't have any since I thoroughly enjoyed the peer pairing  Also, walking the fine line between anonymous feedback and nonanonymous feedback since the more specific my feedback was the more obvious it is who is giving it.</p>
-            </div>
-            <div id="paragraph_title">
-                <h4>How did you feel when you read your feedback?</h4>
-            </div>
-            
-            <div id="paragraph_content">
-                <p>I felt surprisingly vulnerable about the feedback.  I was worried somebody would say something critical and I wondered how I would take it.  In actual fact, people were all very complimentary and I was surprised that I felt a little bashful to be flattered like that.  I did appreciate the positive feedback though.</p>
+                <p>Here's an example:</p>
             </div>
 
-            <div id="paragraph_title">
-                <h4>Was the feedback you received helpful to your learning?</h4>
-            </div>
             <div id="paragraph_content">
-                <p>It was.  It was nice to see how people are experiencing my pairing style.</p>
+                <p>We could define a class called:  spaceships <br>
+                    This class would take arguments as parameters such as:  purpose, speed, crew-size.  Then you would want to initialize these variables so that they can be used in all the methods of the class.  You do this by using the "@" symbol which means this is an instance variable.  You initialize a method like this:</p>
             </div>
 
-            <div id="paragraph_title">
-                <h4>How was it to write feedback? What was most difficult for you when writing feedback for your pair?</h4>
-            </div>
             <div id="paragraph_content">
-                <p>I found it sometimes easy to write feedback and sometimes difficult.  Everyone has been a delight to work with and have helped me learn immensely.  I feel like I'm repeating myself when I write feedback because I am always so appreciative of the companionship my peer pair gave me.</p>
-            </div>
-            <div id="paragraph_title">
-                <h4>Overall, what do you think of using pairing and feedback to guide your learning?
-</h4>
-            </div>
-            <div id="paragraph_content">
-                <p>I believe it is highly effective because it keeps me motivated and engaged and it give me the opportunity to share my knowledge and learn from someone else's.  To give a speficif example, Joey taught me that I could use auto-complete in the terminal by pressing tab.  Later, that day I had a peer pairing session with Justin and I was able to share this knowledge with him, and he greatly appreciated it!</p>
-            </div>
+                <p>def initialize (purpose, speed, crew)<br>  
+                @purpose = purpose<br>
+                @speed = speed<br>
+                @crew = crew</p>
+            </div> 
 
+            <div id="paragraph_content">
+                <p>To later create instances of class you would name it like this while passing in arguments:<br><br>
+                x-wing = spaceships.new(fighter, hyperspace, 1)<br>
+                space_shuttle = spaceships.new(science, mach 10, 8)<br>
+                borg_cube = spaceships.new(domination, Warp 9, 100,000)</p>
+            </div>                         
+
+            <div id="paragraph_content">
+                <p>Now that we have some instances it would be nice to be able to call some methods on them, for instance:<br><br>
+
+                x-wing.function<br>
+                borg_cube.population<br>
+                space_shuttle.kessel_run<br>
+                Back in the body of the class spaceship you define these methods.<br><br>
+
+                For instance:<br><br>
+
+                def population<br>
+                if crew < 2<br>
+                puts "It's lonely in space.  No one can hear you scream, or sneeze, or even yawn for that matter."<br>
+                elsif crew < 50<br>
+                puts "Sounds like a nice Sunday Drive."<br>
+                else<br>
+                puts "What is this?  The Love Boat?!"<br>
+                end<br>
+                end<br><br>
+
+                So this is what would happen:<br><br>
+
+                x-wing.population => "It's lonely in space.  No one can hear you scream, or sneeze, or even yawn for that matter."<br><br>
+
+                borg_cube.population => "What is this?  The Love Boat?!"<br><br>
+
+                space_shuttle.population => "Sounds like a nice Sunday Drive."<br><br>
+
+
+                * I should mentioned that Ruby has some built in classes like Array which you can modify in a program.
+              </div> 
 
       </div>  
       <footer>
